@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./thank-you/thank-you.css">
+    <title>Job Application - Hot Beans</title>
+</head>
+<body>
+<header class="header">
+    <img src="./home-page/coffebean.png" alt="Logo" class="logo">
+    <h1 class="title">Hot Beans</h1>
+</header>
+
+<nav>
+    <div class="buttons">
+        <button onclick="location.href='index.html'">Home</button>
+        <button onclick="location.href='about-us.html'">About Us</button>
+        <button onclick="location.href='members.html'">Members</button>
+        <button onclick="location.href='jobs.html'">Jobs</button>
+        <button onclick="location.href='locations.html'">Locations</button>
+        <button onclick="location.href='contact-us.html'">Contact Us</button>
+    </div> 
+</nav>
+
+<div class="content">
+    <div class="form-container">
+        <h2>Job Application Form</h2>
+        <p class="form-intro">Thank you for your interest in Hot Beans! Please fill out the form below.</p>
+        
+        <form class="application-form">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="firstName">First Name *</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name *</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+
+            <div class="form-group">
+                <label for="position">Position Applying For *</label>
+                <select id="position" name="position" required>
+                    <option value="">-- Select a Position --</option>
+                    <option value="frontend">Senior Frontend Developer</option>
+                    <option value="uxui">UX/UI Designer</option>
+                    <option value="backend">Backend Engineer</option>
+                    <option value="pm">Project Manager</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="experience">Years of Experience *</label>
+                <input type="number" id="experience" name="experience" min="0" required>
+            </div>
+
+            <div class="form-group">
+                <label for="portfolio">Portfolio/Website URL</label>
+                <input type="url" id="portfolio" name="portfolio" placeholder="https://example.com">
+            </div>
+
+            <div class="form-group">
+                <label for="resume">Resume/CV *</label>
+                <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+            </div>
+
+            <div class="form-group">
+                <label for="coverLetter">Cover Letter *</label>
+                <textarea id="coverLetter" name="coverLetter" rows="6" placeholder="Tell us why you'd be a great fit for Hot Beans..." required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="skills">Key Skills</label>
+                <textarea id="skills" name="skills" rows="4" placeholder="List your relevant skills..."></textarea>
+            </div>
+
+            <div class="form-group checkbox">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms" class="checkbox-label">I agree to the terms and conditions *</label>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit Application</button>
+            <button type="reset" class="reset-btn">Clear Form</button>
+        </form>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Hot Beans. All rights reserved.</p>
+</footer>
+
+<script>
+    document.querySelector('.application-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('Thank you for your application! We will review it shortly and contact you within 3-5 business days.');
+        window.location.href = 'jobs.html';
+    });
+</script>
+</body>
+</html>

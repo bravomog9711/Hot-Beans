@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./contact-us/contact-us.css">
+    <title>Hot Beans</title>
+</head>
+<body>
+<header class="header">
+    <img src="./home-page/coffebean.png" alt="Logo" class="logo">
+
+    <h1 class="title">Hot Beans</h1>
+</header>
+
+<nav>
+    <div class="buttons">
+        <button onclick="location.href='index.html'">Home</button>
+        <button onclick="location.href='about-us.html'">About Us</button>
+        <button onclick="location.href='members.html'">Members</button>
+        <button onclick="location.href='jobs.html'">Jobs</button>
+        <button onclick="location.href='locations.html'">Locations</button>
+        <button onclick="location.href='contact-us.html'">Contact Us</button>
+    </div> 
+</nav>
+
+<div class="content">
+    <div class="contact-container">
+        <h2>Get In Touch</h2>
+        <p>Have a question or project idea? We'd love to hear from you. Fill out the form below and we'll get back to you as soon as possible.</p>
+        
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+            
+            <div class="form-group">
+                <label for="company">Company Name</label>
+                <input type="text" id="company" name="company">
+            </div>
+            
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+            </div>
+            
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Hot Beans. All rights reserved.</p>
+</footer>
+</body>
+</html>
